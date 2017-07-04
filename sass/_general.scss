@@ -1,0 +1,29 @@
+html,body,h1,h2,h3,h4,h5,h6,ul,li {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+}
+h2,h3,h5,h6 {
+	font-family: $secondary-font;
+	font-weight: 500;
+}
+h4 {
+	font-weight: 400;
+}
+h5 {
+	text-transform: uppercase;
+	color: $h5-color;
+}
+p {
+	font-family: $primary-font;
+	font-weight: 300;
+	font-size: 13px;
+	color: $h2-p-a-color;
+}
+a {
+	font-family: $secondary-font;
+	font-weight: 500;
+}

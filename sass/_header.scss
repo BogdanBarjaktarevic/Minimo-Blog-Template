@@ -1,0 +1,42 @@
+header {
+	.navbar-default {
+		margin: 0;
+		background-color: $primary-background-color;
+		border: none;
+		padding: 55px;
+		@media (max-width: 768px) {
+			padding: 20px 0 20px 0;
+		}
+		.navbar-brand {
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+	}
+	.navbar-default .navbar-nav > li > a {
+		margin-right: 120px;
+		text-transform: uppercase;
+		@media (max-width: 992px) {
+			margin-right: 0;
+		}
+	}
+	.navbar-nav > li > a:after {
+	content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    transform: scalex(0);
+    margin-top: 10px;
+    background-color: $h2-p-a-color;
+    transition: 0.4s all;
+	}
+	.navbar-nav > li > a:hover:after {
+	transition: 0.4s all;
+    transform: scalex(1);
+	}
+	.navbar-default .navbar-nav > li:last-child > a {
+		margin-right: 0;
+	}
+	.container {
+		max-width: 1080px;
+	}
+}

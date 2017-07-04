@@ -1,0 +1,46 @@
+#single-post {
+	padding: 100px 0 130px 0;
+	.col-md-12 {
+		@include columnBlog;
+		h2 {
+			margin: 30px 0 40px 0;
+			color: $h2-p-a-color
+		}
+		a {
+			margin-top: 80px;
+			cursor: pointer;
+			text-transform: uppercase;
+			color: $h2-p-a-color;
+			&:hover {
+				text-decoration: none;
+				color: lighten($h2-p-a-color,20%);
+			}
+			&:focus {
+				text-decoration: none;
+			}
+		}
+		p {
+			line-height: 25px;
+			@include paragraphWidth;
+		}
+		@media(max-width: 992px) {
+			text-align: center;
+		}
+		.comment-box {
+			display: none;
+		}
+		textarea {
+			width: 50%;
+			margin: 15px 0;
+			@media (max-width: 992px) {
+				width: 100%;
+			}
+		}
+		button {
+			color: $h2-p-a-color;
+			&:hover {
+				background-color: $secondary-background-color;
+			}
+		}
+	}
+}
